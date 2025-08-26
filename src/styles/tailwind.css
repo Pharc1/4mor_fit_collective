@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton:wght@400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core System Colors */
+    --color-background: #F5F5F5; /* gray-100 */
+    --color-foreground: #0D0D0D; /* black */
+    --color-border: #E5E5E5; /* gray-200 */
+    --color-input: #FFFFFF; /* white */
+    --color-ring: #E50914; /* red-600 */
+    --color-card: #FFFFFF; /* white */
+    --color-card-foreground: #0D0D0D; /* black */
+    --color-popover: #FFFFFF; /* white */
+    --color-popover-foreground: #0D0D0D; /* black */
+    --color-muted: #1E1E1E; /* gray-800 */
+    --color-muted-foreground: #CCCCCC; /* gray-300 */
+
+    /* Brand Colors */
+    --color-primary: #0D0D0D; /* black */
+    --color-primary-foreground: #FFFFFF; /* white */
+    --color-secondary: #E50914; /* red-600 */
+    --color-secondary-foreground: #FFFFFF; /* white */
+    --color-accent: #D4AF37; /* yellow-600 */
+    --color-accent-foreground: #0D0D0D; /* black */
+
+    /* Surface Colors */
+    --color-surface: #1E1E1E; /* gray-800 */
+    --color-surface-foreground: #FFFFFF; /* white */
+
+    /* Text Colors */
+    --color-text-primary: #0D0D0D; /* black */
+    --color-text-secondary: #666666; /* gray-500 */
+
+    /* State Colors */
+    --color-destructive: #DC3545; /* red-500 */
+    --color-destructive-foreground: #FFFFFF; /* white */
+    --color-success: #28A745; /* green-600 */
+    --color-success-foreground: #FFFFFF; /* white */
+    --color-warning: #FFC107; /* yellow-500 */
+    --color-warning-foreground: #0D0D0D; /* black */
+    --color-error: #DC3545; /* red-500 */
+    --color-error-foreground: #FFFFFF; /* white */
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 700;
+  }
+
+  .font-headline {
+    font-family: 'Bebas Neue', cursive;
+  }
+
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .font-cta {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+
+  .font-accent {
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+  }
+}
+
+@layer components {
+.btn-primary  {
+    @apply bg-secondary text-secondary-foreground transition-colors duration-300;
+  }
+
+  .btn-outline {
+    @apply border-2 border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground transition-all duration-300;
+  }
+
+  .card-hover {
+    @apply transition-transform duration-300 hover:transform hover:-translate-y-2;
+    box-shadow: 0 4px 12px rgba(13, 13, 13, 0.15);
+  }
+
+  .card-hover:hover {
+    box-shadow: 0 8px 24px rgba(13, 13, 13, 0.25);
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent;
+  }
+
+  .pulse-animation {
+    animation: pulse-scale 2s infinite;
+  }
+
+  @keyframes pulse-scale {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+
+  .slide-in-left {
+    animation: slideInLeft 0.8s ease-out;
+  }
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .slide-in-right {
+    animation: slideInRight 0.8s ease-out;
+  }
+
+  @keyframes slideInRight {
+    from {
+      transform: translateX(30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .shadow-brand {
+    box-shadow: 0 4px 20px rgba(13, 13, 13, 0.15);
+  }
+
+  .shadow-brand-lg {
+    box-shadow: 0 8px 40px rgba(13, 13, 13, 0.2);
+  }
+
+  .border-brand {
+    border: 1px solid #333333;
+  }
+
+  .rounded-brand {
+    border-radius: 8px;
+  }
+}
