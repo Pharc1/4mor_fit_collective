@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import Icon from '../../../components/AppIcon';
-
+import Logo from '../../../components/Logo';
 import Button from '../../../components/ui/Button';
 
 const HeroSection = () => {
@@ -54,24 +54,14 @@ const HeroSection = () => {
       <div className="fixed inset-0 bg-primary flex items-center justify-center z-50">
         <div className="text-center">
           <div className="relative mb-8">
-            <div className="w-24 h-24 bg-secondary rounded-2xl flex items-center justify-center pulse-animation">
-              <span className="font-accent text-white text-4xl font-bold">4</span>
-            </div>
-            <div className="absolute -top-2 -right-2 w-6 h-6 bg-accent rounded-full animate-pulse"></div>
+            <Logo 
+              size="hero" 
+              variant="red"
+              showSubtitle={true}
+              className="pulse-animation"
+            />
           </div>
-          <div className="space-y-2">
-            <h1 className="font-accent text-4xl text-white tracking-tight">
-              4mor Fit Collective
-            </h1>
-            <p className="font-body text-accent text-lg">
-              Pour l'amour du sport
-            </p>
-          </div>
-          <div className="mt-8 flex justify-center">
-            <div className="w-12 h-1 bg-secondary rounded-full overflow-hidden">
-              <div className="w-full h-full bg-accent animate-pulse"></div>
-            </div>
-          </div>
+
         </div>
       </div>
     );
@@ -98,30 +88,24 @@ const HeroSection = () => {
         <div className="space-y-8 fade-in-up">
           {/* Main Logo & Brand */}
           <div className="space-y-4">
-            <div className="flex items-center justify-center space-x-4 mb-6">
-              <div className="relative">
-                <div className="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center transform hover:scale-110 transition-transform duration-300">
-                  <span className="font-accent text-white text-3xl font-bold">4</span>
-                </div>
-                <div className="absolute -top-2 -right-2 w-4 h-4 bg-accent rounded-full animate-pulse"></div>
-              </div>
-              <div>
-                <h1 className="font-accent text-6xl lg:text-8xl text-white tracking-tight">
-                  4mor Fit
-                </h1>
-                <p className="font-body text-xl text-accent">
-                  Collective
-                </p>
-              </div>
+            <div className="flex items-center justify-center mb-6">
+              <Logo 
+                size="hero" 
+                variant="white"
+                showSubtitle={true}
+                className="transform hover:scale-105 transition-transform duration-300"
+              />
             </div>
             
             <h2 className="font-headline text-2xl lg:text-4xl text-accent mb-4">
-              Pour l'amour du sport
+              POUR L'AMOUR DU SPORT
             </h2>
             
-            <p className="font-body text-lg lg:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-              Rejoignez la communauté fitness la plus authentique de Dakar.\nTransformez votre corps, renforcez votre mental, créez des liens durables.
-            </p>
+                          <p className="font-body text-lg lg:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+                <strong>Passionnés du fitness</strong>, rejoignez notre collectif à Dakar.<br/>
+                Cross-training, kettle bells, cordes ondulatoires, wall balls...<br/>
+                <em>Facile à suivre, fun, ludique et efficace. Pour tout le monde.</em>
+              </p>
           </div>
 
           {/* Current Video Info */}
@@ -139,38 +123,38 @@ const HeroSection = () => {
             <Button
               variant="default"
               size="lg"
-              className="bg-secondary hover:bg-secondary/90 text-white font-cta px-8 py-4 text-lg"
+              className="bg-red-600 hover:bg-red-700 text-white font-cta px-8 py-4 text-lg border-2 border-red-500"
               iconName="Play"
               iconPosition="left"
             >
-              Essai Gratuit - 10,000 FCFA/mois
+              VENEZ NOMBREUX - 10,000 FCFA
             </Button>
             
             <Button
               variant="outline"
               size="lg"
               onClick={handleWhatsAppClick}
-              className="border-2 border-accent text-accent hover:bg-accent hover:text-primary font-cta px-8 py-4 text-lg"
+              className="border-2 border-white text-white hover:bg-white hover:text-black font-cta px-8 py-4 text-lg"
               iconName="MessageCircle"
               iconPosition="left"
             >
-              WhatsApp Contact
+              CONTACT WHATSAPP
             </Button>
           </div>
 
           {/* Social Proof */}
           <div className="flex items-center justify-center space-x-8 pt-8">
             <div className="text-center">
-              <div className="font-accent text-3xl text-accent">500+</div>
-              <div className="font-body text-sm text-white/80">Membres Actifs</div>
+              <div className="font-accent text-3xl text-red-500">500+</div>
+              <div className="font-body text-sm text-white/80">PASSIONNÉS DU FITNESS</div>
             </div>
             <div className="text-center">
-              <div className="font-accent text-3xl text-accent">50+</div>
-              <div className="font-body text-sm text-white/80">Entreprises Partenaires</div>
+              <div className="font-accent text-3xl text-red-500">50+</div>
+              <div className="font-body text-sm text-white/80">ÉQUIPES PARTENAIRES</div>
             </div>
             <div className="text-center">
-              <div className="font-accent text-3xl text-accent">3</div>
-              <div className="font-body text-sm text-white/80">Lieux à Dakar</div>
+              <div className="font-accent text-3xl text-red-500">2+</div>
+              <div className="font-body text-sm text-white/80">SITES À DAKAR</div>
             </div>
           </div>
         </div>

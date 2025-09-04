@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import Header from '../../components/ui/Header';
+import Logo from '../../components/Logo';
 import Icon from '../../components/AppIcon';
 import Button from '../../components/ui/Button';
 import InteractiveMap from './components/InteractiveMap';
@@ -317,13 +318,13 @@ const LocationExperienceInteractiveVenues = () => {
   return (
     <>
       <Helmet>
-        <title>Nos Lieux d'Entraînement - 4mor Fit Collective | Centres Fitness à Dakar</title>
-        <meta name="description" content="Découvrez nos centres 4mor Fit à travers Dakar : Plateau, Almadies, Parcelles. Espaces modernes, équipements professionnels, accès facile. Trouvez votre lieu d'entraînement idéal." />
+        <title>Nos Lieux d'Entraînement - 4m'or Fit Collective | Centres Fitness à Dakar</title>
+        <meta name="description" content="Découvrez nos centres 4m'or Fit à travers Dakar : Plateau, Almadies, Parcelles. Espaces modernes, équipements professionnels, accès facile. Trouvez votre lieu d'entraînement idéal." />
         <meta name="keywords" content="salle sport Dakar, fitness Plateau, gym Almadies, musculation Parcelles, centres fitness Sénégal" />
-        <meta property="og:title" content="Nos Lieux d'Entraînement - 4mor Fit Collective" />
+        <meta property="og:title" content="Nos Lieux d'Entraînement - 4m'or Fit Collective" />
         <meta property="og:description" content="3 centres fitness à Dakar pour votre transformation. Équipements pro, coaches experts, communauté authentique." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="/location-experience-interactive-venues" />
+        <link rel="canonical" href="/lieux" />
       </Helmet>
       <div className="min-h-screen bg-background">
         <Header />
@@ -553,14 +554,12 @@ const LocationExperienceInteractiveVenues = () => {
           <div className="max-w-7xl mx-auto px-4 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               <div className="md:col-span-2">
-                <div className="flex items-center space-x-2 mb-4">
-                  <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center">
-                    <span className="font-accent text-white text-xl font-bold">4</span>
-                  </div>
-                  <div>
-                    <span className="font-accent text-2xl text-white tracking-tight">4mor</span>
-                    <span className="font-body text-sm text-gray-300 ml-1">Fit Collective</span>
-                  </div>
+                <div className="mb-4">
+                  <Logo 
+                    size="small" 
+                    variant="white"
+                    showSubtitle={true}
+                  />
                 </div>
                 <p className="text-gray-300 mb-4 max-w-md">
                   Pour l'amour du sport. Trois centres à Dakar pour votre transformation physique et mentale.

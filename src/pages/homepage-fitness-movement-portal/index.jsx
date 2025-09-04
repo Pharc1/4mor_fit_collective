@@ -9,6 +9,7 @@ import InstagramFeed from './components/InstagramFeed';
 import LocationMap from './components/LocationMap';
 import WhatsAppFloat from './components/WhatsAppFloat';
 import Icon from '../../components/AppIcon';
+import Logo from '../../components/Logo';
 
 
 const HomepageFitnessMovementPortal = () => {
@@ -25,11 +26,11 @@ const HomepageFitnessMovementPortal = () => {
         <meta property="og:title" content="4mor Fit Collective - Pour l'amour du sport" />
         <meta property="og:description" content="Transformez votre corps, renforcez votre mental, créez des liens durables avec la communauté fitness authentique de Dakar." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://4morfit.com/homepage-fitness-movement-portal" />
+        <meta property="og:url" content="https://4morfit.com/accueil" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="4mor Fit Collective - Pour l'amour du sport" />
         <meta name="twitter:description" content="Rejoignez plus de 500 membres actifs dans la communauté fitness la plus authentique de Dakar." />
-        <link rel="canonical" href="https://4morfit.com/homepage-fitness-movement-portal" />
+        <link rel="canonical" href="https://4morfit.com/accueil" />
       </Helmet>
       <div className="min-h-screen bg-background">
         {/* Header */}
@@ -62,21 +63,12 @@ const HomepageFitnessMovementPortal = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {/* Brand Column */}
               <div className="lg:col-span-2">
-                <div className="flex items-center space-x-3 mb-6">
-                  <div className="relative">
-                    <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center">
-                      <span className="font-accent text-white text-2xl font-bold">4</span>
-                    </div>
-                    <div className="absolute -top-1 -right-1 w-3 h-3 bg-accent rounded-full"></div>
-                  </div>
-                  <div>
-                    <h3 className="font-accent text-3xl text-white tracking-tight">
-                      4mor Fit
-                    </h3>
-                    <p className="font-body text-accent">
-                      Collective
-                    </p>
-                  </div>
+                <div className="mb-6">
+                  <Logo 
+                    size="medium" 
+                    variant="white"
+                    showSubtitle={true}
+                  />
                 </div>
                 <p className="font-body text-white/80 mb-6 max-w-md">
                   Pour l'amour du sport - La communauté fitness la plus authentique de Dakar.\nTransformez votre corps, renforcez votre mental, créez des liens durables.

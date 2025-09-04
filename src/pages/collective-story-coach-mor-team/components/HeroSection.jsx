@@ -17,23 +17,25 @@ const HeroSection = () => {
           {/* Content Side */}
           <div className="space-y-8 slide-in-left">
             <div className="space-y-4">
-              <div className="inline-flex items-center space-x-2 bg-secondary/10 px-4 py-2 rounded-full">
-                <div className="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
-                <span className="text-secondary font-body text-sm font-medium">
-                  Fondateur & Coach Principal
+              <div className="inline-flex items-center space-x-2 bg-red-500/10 px-4 py-2 rounded-full">
+                <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
+                <span className="text-red-400 font-body text-sm font-medium">
+                  FONDATEUR & COACH PRINCIPAL
                 </span>
               </div>
               
               <h1 className="font-headline text-5xl lg:text-7xl text-white leading-tight">
-                Coach
-                <span className="text-gradient block">Mor</span>
-                <span className="text-accent text-3xl lg:text-4xl block mt-2">
-                  & L'Équipe 4mor
+                COACH
+                <span className="text-red-500 block">MOR</span>
+                <span className="text-red-400 text-3xl lg:text-4xl block mt-2">
+                  & L'ÉQUIPE 4M'OR
                 </span>
               </h1>
               
               <p className="text-gray-300 text-lg lg:text-xl font-body leading-relaxed max-w-lg">
-                De la formation française d'élite à la démocratisation du fitness fonctionnel à Dakar. Une histoire de passion, d'expertise et de communauté.
+                <strong>Passionné du fitness</strong>, Coach Mor a créé 4m'or Fit à Dakar.<br/>
+                <em>Cross-training, kettle bells, cordes ondulatoires... Pour tout le monde.</em><br/>
+                <span className="text-red-400">Nouveau point à Niarry Tally !</span>
               </p>
             </div>
 
@@ -41,35 +43,35 @@ const HeroSection = () => {
               <Button
                 variant="default"
                 size="lg"
-                className="bg-secondary hover:bg-secondary/90 text-white font-cta"
+                className="bg-red-600 hover:bg-red-700 text-white font-cta border-2 border-red-500"
                 iconName="Play"
                 iconPosition="left"
               >
-                Voir Notre Histoire
+                NOTRE HISTOIRE
               </Button>
               <Button
                 variant="outline"
                 size="lg"
-                className="border-accent text-accent hover:bg-accent hover:text-primary font-cta"
+                className="border-red-500 text-red-500 hover:bg-red-500 hover:text-white font-cta"
                 iconName="Users"
                 iconPosition="left"
               >
-                Rencontrer l'Équipe
+                L'ÉQUIPE 4M'OR
               </Button>
             </div>
 
             {/* Certifications */}
             <div className="pt-8 border-t border-gray-700">
-              <p className="text-gray-400 text-sm font-body mb-4">Certifications Professionnelles</p>
+              <p className="text-gray-400 text-sm font-body mb-4">EXPERTISE & PASSION</p>
               <div className="flex flex-wrap gap-4">
-                <div className="bg-surface/50 px-4 py-2 rounded-lg border border-gray-600">
-                  <span className="text-accent font-body text-sm font-medium">Formation France</span>
+                <div className="bg-red-500/10 px-4 py-2 rounded-lg border border-red-500/30">
+                  <span className="text-red-400 font-body text-sm font-medium">FORMATION FRANCE</span>
                 </div>
-                <div className="bg-surface/50 px-4 py-2 rounded-lg border border-gray-600">
-                  <span className="text-accent font-body text-sm font-medium">Fitness Fonctionnel</span>
+                <div className="bg-red-500/10 px-4 py-2 rounded-lg border border-red-500/30">
+                  <span className="text-red-400 font-body text-sm font-medium">CROSS-TRAINING</span>
                 </div>
-                <div className="bg-surface/50 px-4 py-2 rounded-lg border border-gray-600">
-                  <span className="text-accent font-body text-sm font-medium">Coach Certifié</span>
+                <div className="bg-red-500/10 px-4 py-2 rounded-lg border border-red-500/30">
+                  <span className="text-red-400 font-body text-sm font-medium">COACH MOR</span>
                 </div>
               </div>
             </div>

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Header from '../../components/ui/Header';
+import Logo from '../../components/Logo';
 import ContactHero from './components/ContactHero';
 import ContactForm from './components/ContactForm';
 import LocationContact from './components/LocationContact';
@@ -13,7 +14,7 @@ const ContactBookingPage = () => {
     window.scrollTo(0, 0);
     
     // Update document title
-    document.title = "Contact & Réservation - 4mor Fit Collective | Dakar";
+    document.title = "Contact & Réservation - 4m'or Fit Collective | Dakar";
     
     // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
@@ -72,11 +73,12 @@ const ContactBookingPage = () => {
       <footer className="bg-primary text-white py-8 border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <div className="text-center space-y-4">
-            <div className="flex items-center justify-center space-x-2">
-              <div className="w-8 h-8 bg-secondary rounded-lg flex items-center justify-center">
-                <span className="font-accent text-white text-lg font-bold">4</span>
-              </div>
-              <span className="font-accent text-xl text-white tracking-tight">4mor Fit Collective</span>
+            <div className="flex items-center justify-center">
+              <Logo 
+                size="small" 
+                variant="white"
+                showSubtitle={true}
+              />
             </div>
             <p className="font-body text-gray-400 text-sm">
               Pour l'amour du sport - Accessible à tous, partout

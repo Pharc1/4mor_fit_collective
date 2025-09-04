@@ -22,39 +22,40 @@ const HeroSection = () => {
             {/* Left Content */}
             <div className="text-white space-y-8">
               <div className="space-y-4">
-                <div className="inline-flex items-center space-x-2 bg-secondary/20 backdrop-blur-sm rounded-full px-4 py-2 border border-secondary/30">
-                  <div className="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
-                  <span className="font-body text-sm text-accent font-medium">Solutions Entreprises</span>
+                <div className="inline-flex items-center space-x-2 bg-red-500/20 backdrop-blur-sm rounded-full px-4 py-2 border border-red-500/30">
+                  <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
+                  <span className="font-body text-sm text-red-400 font-medium">TEAM BUILDING BRUT</span>
                 </div>
                 
                 <h1 className="font-headline text-5xl lg:text-7xl leading-tight">
-                  Renforcez Vos
-                  <span className="text-gradient block">Équipes</span>
+                  VOS ÉQUIPES
+                  <span className="text-red-500 block">S'ENTRAÎNENT</span>
                 </h1>
                 
                 <p className="font-body text-xl lg:text-2xl text-gray-300 leading-relaxed max-w-2xl">
-                  Transformez la cohésion d'équipe avec l'expertise française de Coach Mor et l'authenticité culturelle de Dakar
+                  <strong>Coach Mor et son équipe</strong> transforment vos équipes avec du cross-training authentique.<br/>
+                  <em>Kettle bells, cordes, wall balls... Pour des équipes plus fortes.</em>
                 </p>
               </div>
 
               {/* Key Benefits */}
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center">
-                    <span className="text-accent font-accent text-lg">+85%</span>
+                  <div className="w-12 h-12 bg-red-500/20 rounded-lg flex items-center justify-center">
+                    <span className="text-red-400 font-accent text-lg">+85%</span>
                   </div>
                   <div>
-                    <p className="font-cta text-white text-sm">Engagement Équipe</p>
-                    <p className="font-body text-gray-400 text-xs">Résultats mesurés</p>
+                    <p className="font-cta text-white text-sm">ÉQUIPES PLUS FORTES</p>
+                    <p className="font-body text-gray-400 text-xs">Résultats concrets</p>
                   </div>
                 </div>
                 
                 <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center">
-                    <span className="text-accent font-accent text-lg">50+</span>
+                  <div className="w-12 h-12 bg-red-500/20 rounded-lg flex items-center justify-center">
+                    <span className="text-red-400 font-accent text-lg">50+</span>
                   </div>
                   <div>
-                    <p className="font-cta text-white text-sm">Entreprises Partenaires</p>
+                    <p className="font-cta text-white text-sm">ÉQUIPES TRANSFORMÉES</p>
                     <p className="font-body text-gray-400 text-xs">À Dakar</p>
                   </div>
                 </div>
@@ -65,19 +66,19 @@ const HeroSection = () => {
                 <Button
                   variant="default"
                   size="lg"
-                  className="bg-secondary hover:bg-secondary/90 text-white font-cta"
+                  className="bg-red-600 hover:bg-red-700 text-white font-cta border-2 border-red-500"
                 >
-                  Consultation Gratuite
+                  VENEZ NOUS REJOINDRE
                 </Button>
                 
                 <Button
                   variant="outline"
                   size="lg"
-                  iconName="Download"
+                  iconName="MessageCircle"
                   iconPosition="left"
-                  className="border-white text-white hover:bg-white hover:text-primary"
+                  className="border-red-500 text-red-500 hover:bg-red-500 hover:text-white font-cta"
                 >
-                  Brochure Corporate
+                  CONTACT WHATSAPP
                 </Button>
               </div>
 

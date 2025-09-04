@@ -17,13 +17,13 @@ const Routes = () => {
       <ScrollToTop />
       <RouterRoutes>
         {/* Define your route here */}
-        <Route path="/" element={<CollectiveStoryPage />} />
-        <Route path="/homepage-fitness-movement-portal" element={<HomepageFitnessMovementPortal />} />
-        <Route path="/training-services-interactive-universe" element={<TrainingServicesInteractiveUniverse />} />
-        <Route path="/collective-story-coach-mor-team" element={<CollectiveStoryPage />} />
-        <Route path="/corporate-solutions-professional-partnership-hub" element={<CorporateSolutionsPage />} />
-        <Route path="/contact-booking-multi-channel-engagement" element={<ContactBookingPage />} />
-        <Route path="/location-experience-interactive-venues" element={<LocationExperienceInteractiveVenues />} />
+        <Route path="/" element={<HomepageFitnessMovementPortal />} />
+        <Route path="/accueil" element={<HomepageFitnessMovementPortal />} />
+        <Route path="/services" element={<TrainingServicesInteractiveUniverse />} />
+        <Route path="/histoire" element={<CollectiveStoryPage />} />
+        <Route path="/entreprises" element={<CorporateSolutionsPage />} />
+        <Route path="/contact" element={<ContactBookingPage />} />
+        <Route path="/lieux" element={<LocationExperienceInteractiveVenues />} />
         <Route path="*" element={<NotFound />} />
       </RouterRoutes>
       </ErrorBoundary>

@@ -8,6 +8,7 @@ import MethodologySection from './components/MethodologySection';
 import CredentialsSection from './components/CredentialsSection';
 import PricingSection from './components/PricingSection';
 import ContactSection from './components/ContactSection';
+import Logo from '../../components/Logo';
 
 const CorporateSolutionsPage = () => {
   useEffect(() => {
@@ -17,17 +18,17 @@ const CorporateSolutionsPage = () => {
   return (
     <>
       <Helmet>
-        <title>Solutions Corporate - 4mor Fit Collective | Team Building & Wellness Entreprise Dakar</title>
+        <title>Solutions Corporate - 4m'or Fit Collective | Team Building & Wellness Entreprise Dakar</title>
         <meta 
           name="description" 
-          content="Transformez vos équipes avec 4mor Fit Collective. Team building authentique, executive fitness et wellness consulting. Expertise française, culture sénégalaise. ROI +45% garanti." 
+          content="Transformez vos équipes avec 4m'or Fit Collective. Team building authentique, executive fitness et wellness consulting. Expertise française, culture sénégalaise. ROI +45% garanti." 
         />
         <meta name="keywords" content="team building dakar, corporate wellness senegal, formation équipe entreprise, coach mor, functional training corporate, wellness consulting dakar" />
-        <meta property="og:title" content="Solutions Corporate - 4mor Fit Collective" />
+        <meta property="og:title" content="Solutions Corporate - 4m'or Fit Collective" />
         <meta property="og:description" content="Team building et wellness corporate à Dakar. Expertise française de Coach Mor pour des équipes plus fortes et performantes." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://4morfit.sn/corporate-solutions-professional-partnership-hub" />
-        <link rel="canonical" href="https://4morfit.sn/corporate-solutions-professional-partnership-hub" />
+        <meta property="og:url" content="https://4morfit.sn/entreprises" />
+        <link rel="canonical" href="https://4morfit.sn/entreprises" />
       </Helmet>
       <div className="min-h-screen bg-background">
         <Header />
@@ -48,14 +49,12 @@ const CorporateSolutionsPage = () => {
             <div className="grid md:grid-cols-4 gap-8">
               {/* Brand */}
               <div className="md:col-span-2">
-                <div className="flex items-center space-x-3 mb-6">
-                  <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center">
-                    <span className="font-accent text-white text-xl font-bold">4</span>
-                  </div>
-                  <div>
-                    <span className="font-accent text-2xl text-white tracking-tight">4mor</span>
-                    <span className="font-body text-sm text-gray-300 ml-1">Fit Collective</span>
-                  </div>
+                <div className="mb-6">
+                  <Logo 
+                    size="medium" 
+                    variant="white"
+                    showSubtitle={true}
+                  />
                 </div>
                 <p className="font-body text-gray-300 leading-relaxed mb-6 max-w-md">
                   Transformez vos équipes avec l'expertise française de Coach Mor et l'authenticité culturelle de Dakar. Pour l'amour du sport et la force collective.

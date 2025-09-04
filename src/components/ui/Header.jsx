@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Icon from '../AppIcon';
 import Button from './Button';
+import Logo from '../Logo';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -9,15 +10,15 @@ const Header = () => {
   const location = useLocation();
 
   const navigationItems = [
-    { name: 'Accueil', path: '/homepage-fitness-movement-portal', icon: 'Home' },
-    { name: 'Notre Histoire', path: '/collective-story-coach-mor-team', icon: 'Users' },
-    { name: 'Services', path: '/training-services-interactive-universe', icon: 'Dumbbell' },
-    { name: 'Lieux', path: '/location-experience-interactive-venues', icon: 'MapPin' },
-    { name: 'Entreprises', path: '/corporate-solutions-professional-partnership-hub', icon: 'Building2' }
+    { name: 'Accueil', path: '/accueil', icon: 'Home' },
+    { name: 'Notre Histoire', path: '/histoire', icon: 'Users' },
+    { name: 'Services', path: '/services', icon: 'Dumbbell' },
+    { name: 'Lieux', path: '/lieux', icon: 'MapPin' },
+    { name: 'Entreprises', path: '/entreprises', icon: 'Building2' }
   ];
 
   const secondaryItems = [
-    { name: 'Contact', path: '/contact-booking-multi-channel-engagement', icon: 'MessageCircle' }
+    { name: 'Contact', path: '/contact', icon: 'MessageCircle' }
   ];
 
   useEffect(() => {
@@ -57,24 +58,16 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 px-4 lg:px-8">
           {/* Logo */}
           <Link 
-            to="/homepage-fitness-movement-portal" 
-            className="flex items-center space-x-2 group"
+            to="/accueil" 
+            className="group"
             onClick={closeMobileMenu}
           >
-            <div className="relative">
-              <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center transform transition-transform duration-300 group-hover:scale-110">
-                <span className="font-accent text-white text-xl font-bold">4</span>
-              </div>
-              <div className="absolute -top-1 -right-1 w-3 h-3 bg-accent rounded-full animate-pulse"></div>
-            </div>
-            <div className="hidden sm:block">
-              <span className="font-accent text-2xl text-primary tracking-tight">
-                4mor
-              </span>
-              <span className="font-body text-sm text-text-secondary ml-1">
-                Fit Collective
-              </span>
-            </div>
+            <Logo 
+              size="small" 
+              variant="default"
+              showSubtitle={true}
+              className="group-hover:scale-105"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -99,7 +92,7 @@ const Header = () => {
           {/* Desktop Actions */}
           <div className="hidden lg:flex items-center space-x-3">
             <Link
-              to="/contact-booking-multi-channel-engagement"
+              to="/contact"
               className="text-text-primary hover:text-secondary transition-colors duration-300 font-body text-sm font-medium"
             >
               Contact
@@ -110,16 +103,16 @@ const Header = () => {
               onClick={handleWhatsAppClick}
               iconName="MessageCircle"
               iconPosition="left"
-              className="border-secondary text-secondary hover:bg-secondary hover:text-white"
+              className="border-red-500 text-red-500 hover:bg-red-500 hover:text-white font-cta"
             >
-              WhatsApp
+              WHATSAPP
             </Button>
             <Button
               variant="default"
               size="sm"
-              className="bg-secondary hover:bg-secondary/90 text-white font-cta"
+              className="bg-red-600 hover:bg-red-700 text-white font-cta border-2 border-red-500"
             >
-              Essai Gratuit
+              VENEZ NOUS REJOINDRE
             </Button>
           </div>
 
@@ -190,27 +183,27 @@ const Header = () => {
                 }}
                 iconName="MessageCircle"
                 iconPosition="left"
-                className="border-secondary text-secondary hover:bg-secondary hover:text-white justify-center"
+                className="border-red-500 text-red-500 hover:bg-red-500 hover:text-white justify-center font-cta"
               >
-                Contactez-nous sur WhatsApp
+                CONTACT WHATSAPP
               </Button>
               <Button
                 variant="default"
                 fullWidth
                 onClick={closeMobileMenu}
-                className="bg-secondary hover:bg-secondary/90 text-white font-cta justify-center"
+                className="bg-red-600 hover:bg-red-700 text-white font-cta justify-center border-2 border-red-500"
               >
-                Commencer l'Essai Gratuit
+                VENEZ NOUS REJOINDRE
               </Button>
             </div>
 
             {/* Mobile Brand Info */}
             <div className="pt-4 border-t border-border text-center">
               <p className="text-text-secondary text-sm font-body">
-                Rejoignez la communauté fitness authentique de Dakar
+                PASSIONNÉS DU FITNESS - DAKAR
               </p>
-              <p className="text-accent text-lg font-cta mt-1">
-                10,000 FCFA/mois
+              <p className="text-red-500 text-lg font-cta mt-1">
+                10,000 FCFA - VENEZ NOMBREUX
               </p>
             </div>
           </div>

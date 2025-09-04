@@ -22,13 +22,14 @@ const ContactHero = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="font-headline text-4xl lg:text-6xl text-white leading-tight">
-                Contactez-nous
-                <span className="block text-secondary">Aujourd'hui</span>
+                VENEZ NOUS
+                <span className="block text-red-500">REJOINDRE</span>
               </h1>
               <p className="font-body text-lg lg:text-xl text-gray-300 leading-relaxed">
-                Prêt à rejoindre la communauté fitness la plus authentique de Dakar ? 
-                Contactez-nous via WhatsApp, planifiez votre essai gratuit ou demandez 
-                des informations sur nos services corporate.
+                <strong>Passionnés du fitness</strong>, rejoignez notre collectif à Dakar.<br/>
+                <em>Cross-training, kettle bells, cordes ondulatoires... Pour tout le monde.</em><br/>
+                <span className="text-red-400">Nouveau point à Niarry Tally !</span><br/>
+                Contactez-nous sur WhatsApp ou venez directement !
               </p>
             </div>
 
@@ -36,17 +37,17 @@ const ContactHero = () => {
             <div className="grid grid-cols-2 gap-6">
               <div className="text-center lg:text-left">
                 <div className="flex items-center justify-center lg:justify-start space-x-2 mb-2">
-                  <Icon name="Clock" size={20} className="text-accent" />
-                  <span className="font-cta text-accent">Réponse Rapide</span>
+                  <Icon name="Clock" size={20} className="text-red-500" />
+                  <span className="font-cta text-red-400">RÉPONSE RAPIDE</span>
                 </div>
                 <p className="font-body text-sm text-gray-400">
-                  Réponse WhatsApp en moins de 30 minutes
+                  Coach Mor répond rapidement sur WhatsApp
                 </p>
               </div>
               <div className="text-center lg:text-left">
                 <div className="flex items-center justify-center lg:justify-start space-x-2 mb-2">
-                  <Icon name="Users" size={20} className="text-accent" />
-                  <span className="font-cta text-accent">Communauté Active</span>
+                  <Icon name="Users" size={20} className="text-red-500" />
+                  <span className="font-cta text-red-400">COMMUNAUTÉ BRUTE</span>
                 </div>
                 <p className="font-body text-sm text-gray-400">
                   Plus de 500 membres actifs

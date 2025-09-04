@@ -5,6 +5,7 @@ import Icon from '../../components/AppIcon';
 import Image from '../../components/AppImage';
 import Button from '../../components/ui/Button';
 import Header from '../../components/ui/Header';
+import Logo from '../../components/Logo';
 import ServiceCard from './components/ServiceCard';
 import ServiceComparison from './components/ServiceComparison';
 import PricingTransparency from './components/PricingTransparency';
@@ -236,12 +237,21 @@ const TrainingServicesInteractiveUniverse = () => {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen bg-background flex items-center justify-center">
+      <div className="fixed inset-0 bg-primary flex items-center justify-center z-50">
         <div className="text-center">
-          <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4 pulse-animation">
-            <Icon name="Dumbbell" size={32} className="text-white" />
+          <div className="relative mb-8">
+            <Logo 
+              size="hero" 
+              variant="red"
+              showSubtitle={true}
+              className="pulse-animation"
+            />
           </div>
-          <p className="text-text-secondary font-body">Chargement de nos services...</p>
+          <div className="space-y-2">
+            <p className="font-body text-red-400 text-lg">
+              CHARGEMENT DES CIRCUITS...
+            </p>
+          </div>
         </div>
       </div>
     );
@@ -250,7 +260,7 @@ const TrainingServicesInteractiveUniverse = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Services d'Entraînement - 4mor Fit Collective | Cross Training, Coaching Personnel & Team Building</title>
+        <title>Services d'Entraînement - 4m'or Fit Collective | Cross Training, Coaching Personnel & Team Building</title>
         <meta name="description" content="Découvrez nos services d'entraînement : Cross Training à 10,000 FCFA/mois, Coaching Personnel et Team Building Entreprise. Méthodologie française, communauté authentique à Dakar." />
         <meta name="keywords" content="cross training dakar, coaching personnel senegal, team building entreprise, fitness dakar, entraînement fonctionnel, 4mor fit" />
       </Helmet>
@@ -269,12 +279,12 @@ const TrainingServicesInteractiveUniverse = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="font-headline text-4xl md:text-6xl text-white mb-6 slide-in-left">
-              Univers <span className="text-secondary">d'Entraînement</span>
+              CROSS-TRAINING <span className="text-red-500">FONCTIONNEL</span>
             </h1>
             <p className="text-white/90 font-body text-lg md:text-xl mb-8 leading-relaxed slide-in-left">
-              Explorez nos services d'entraînement conçus pour transformer votre condition physique 
-              et créer une communauté forte. De l'entraînement fonctionnel au coaching personnel, 
-              découvrez l'approche 4mor Fit.
+              <strong>Kettle bells, cordes ondulatoires, wall balls, slam balls...</strong><br/>
+              Circuit d'entraînement qui travaille tout le corps dans sa totalité.<br/>
+              <em>Facile à suivre, fun, ludique et efficace. Pour tout le monde.</em>
             </p>
             
             <div className="flex flex-wrap gap-4 slide-in-left">
@@ -284,17 +294,17 @@ const TrainingServicesInteractiveUniverse = () => {
                 onClick={() => scrollToSection('services')}
                 iconName="Dumbbell"
                 iconPosition="left"
-                className="bg-secondary hover:bg-secondary/90 font-cta"
+                className="bg-red-600 hover:bg-red-700 font-cta border-2 border-red-500"
               >
-                Découvrir nos services
+                VENEZ VOIR NOS CIRCUITS
               </Button>
               <Button
                 variant="outline"
                 size="lg"
-                onClick={() => handleWhatsApp("Salut! Je voudrais en savoir plus sur vos services d'entraînement.")}
+                onClick={() => handleWhatsApp("Salut! Je voudrais rejoindre le cross-training à Dakar.")}
                 iconName="MessageCircle"
                 iconPosition="left"
-                className="border-white text-white hover:bg-white hover:text-primary"
+                className="border-red-500 text-red-500 hover:bg-red-500 hover:text-white font-cta"
               >
                 Contact WhatsApp
               </Button>
@@ -425,14 +435,12 @@ const TrainingServicesInteractiveUniverse = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
-              <div className="flex items-center space-x-3 mb-6">
-                <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center">
-                  <span className="font-accent text-white text-xl font-bold">4</span>
-                </div>
-                <div>
-                  <span className="font-accent text-2xl tracking-tight">4mor Fit</span>
-                  <span className="font-body text-sm text-white/70 ml-2">Collective</span>
-                </div>
+              <div className="mb-6">
+                <Logo 
+                  size="medium" 
+                  variant="white"
+                  showSubtitle={true}
+                />
               </div>
               <p className="text-white/80 font-body leading-relaxed mb-6">
                 Pour l'amour du sport. Rejoignez la communauté fitness la plus authentique de Dakar 

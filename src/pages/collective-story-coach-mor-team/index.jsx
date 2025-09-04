@@ -17,16 +17,16 @@ const CollectiveStoryPage = () => {
   return (
     <>
       <Helmet>
-        <title>Notre Histoire - Coach Mor & L'Équipe 4mor Fit Collective</title>
+        <title>Notre Histoire - Coach Mor & L'Équipe 4m'or Fit Collective</title>
         <meta 
           name="description" 
           content="Découvrez l'histoire authentique de Coach Mor et son équipe. De la formation française d'élite à la démocratisation du fitness fonctionnel à Dakar. Une communauté unie par la passion du sport." 
         />
         <meta name="keywords" content="Coach Mor, 4mor Fit Collective, fitness Dakar, entraîneur français, équipe fitness, histoire collective, sport Sénégal" />
-        <meta property="og:title" content="Notre Histoire - Coach Mor & L'Équipe 4mor Fit Collective" />
+        <meta property="og:title" content="Notre Histoire - Coach Mor & L'Équipe 4m'or Fit Collective" />
         <meta property="og:description" content="L'histoire inspirante de Coach Mor et de son équipe passionnée qui révolutionne le fitness à Dakar" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="/collective-story-coach-mor-team" />
+        <link rel="canonical" href="/histoire" />
       </Helmet>
 
       <div className="min-h-screen bg-background">
